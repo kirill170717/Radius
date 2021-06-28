@@ -15,14 +15,21 @@ using System.Windows.Shapes;
 
 namespace Radius
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Cal(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Form(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

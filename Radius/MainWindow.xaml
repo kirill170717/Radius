@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Radius"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="300">
     <Grid>
-        
+        <Label Content="Радиус журнала, м." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Width="128"/>
+        <Label Content="Радиальный зазор, м." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,71,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139" Margin="143,40,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139" Margin="143,71,0,0"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="207,102,0,0" Click="Button_Cal"/>
+        <Button Content="Формула" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,102,0,0" Click="Button_Click"/>
     </Grid>
 </Window>
