@@ -24,7 +24,9 @@ namespace Radius
 
         private void Button_Cal(object sender, RoutedEventArgs e)
         {
-
+            double Radius = 0;
+            Radius = Convert.ToDouble(r.Text) + Convert.ToDouble(c.Text);
+            radius.Text = Radius.ToString();
         }
 
         private void Button_Form(object sender, RoutedEventArgs e)
