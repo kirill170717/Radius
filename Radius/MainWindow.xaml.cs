@@ -31,7 +31,7 @@ namespace Radius
 
         private void Button_Form(object sender, RoutedEventArgs e)
         {
-            form.Text = "R = r + c\n R - Радиус  подшипника с учетом радиального зазора\n r - радиус ценности журнала\n c - значение радиального зазора";
+            form.Text = "R = r + c\nR - Радиус  подшипника с учетом радиального зазора\nr - радиус ценности журнала\nc - значение радиального зазора";
         }
     }
 }
