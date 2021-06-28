@@ -9,9 +9,12 @@
     <Grid>
         <Label Content="Радиус журнала, м." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Width="128"/>
         <Label Content="Радиальный зазор, м." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,71,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139" Margin="143,40,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139" Margin="143,71,0,0"/>
+        <TextBox Name="r" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Margin="143,40,0,0"/>
+        <TextBox Name="c" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Margin="143,71,0,0"/>
         <Button Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="207,102,0,0" Click="Button_Cal"/>
-        <Button Content="Формула" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,102,0,0" Click="Button_Click"/>
+        <Button Content="Формула" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,102,0,0" Click="Button_Form"/>
+        <TextBox Name="form" HorizontalAlignment="Left" Height="210" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Margin="10,199,0,0" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}"/>
+        <TextBox Name="c_Copy" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="164,127,0,0"/>
+        <Label Content="Радиус подшипника, м." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,127,0,0"/>
     </Grid>
 </Window>
