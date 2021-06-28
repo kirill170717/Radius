@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Tulpep.NotificationWindow;
+using Color = System.Drawing.Color;
 
 namespace Radius
 {
@@ -24,9 +14,20 @@ namespace Radius
 
         private void Button_Cal(object sender, RoutedEventArgs e)
         {
+            PopupNotifier popup = new PopupNotifier();
+            popup.BodyColor = Color.LightPink;
+
             double Radius = 0;
-            Radius = Convert.ToDouble(r.Text) + Convert.ToDouble(c.Text);
-            radius.Text = Radius.ToString();
+            if (string.IsNullOrWhiteSpace(r.Text) || string.IsNullOrWhiteSpace(c.Text))
+            {
+                popup.ContentText = "Ключевые поля не заполнены";
+                popup.Popup();
+            }
+            else
+            {
+                Radius = Convert.ToDouble(r.Text) + Convert.ToDouble(c.Text);
+                radius.Text = Radius.ToString();
+            }
         }
 
         private void Button_Form(object sender, RoutedEventArgs e)
